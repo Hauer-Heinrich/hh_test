@@ -1,0 +1,46 @@
+{
+    "name": "hauerheinrich/hh-test",
+    "type": "typo3-cms-extension",
+    "description": "Hauer-Heinrich - Test Extension.",
+    "authors": [
+        {
+            "name": "Christian Hackl",
+            "email": "chackl@hauer-heinrich.de",
+            "homepage": "http://www.hauer-heinrich.de",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/Hauer-Heinrich/hh_test/issues",
+        "source": "https://github.com/Hauer-Heinrich/hh_test",
+        "docs": "https://github.com/Hauer-Heinrich/hh_test/blob/master/README.md"
+    },
+    "funding": [
+        {
+            "type": "paypal",
+            "url": "https://www.paypal.com/paypalme/hauerheinrich"
+        }
+    ],
+    "version": "0.4.7",
+    "license": ["GPL-2.0-or-later"],
+    "keywords": ["TYPO3 CMS", "Test", "Extension"],
+    "replace": {
+        "hauer-heinrich/hh_test": "self.version",
+        "typo3-ter/hh-test": "self.version"
+    },
+    "require": {
+        "typo3/cms-core": "^10.4.0 || ^11.5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "HauerHeinrich\\HhTest\\": "Classes"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "cms-package-dir": "{$vendor-dir}/typo3/cms",
+            "web-dir": ".Build/Web",
+            "extension-key": "hh_test"
+        }
+    }
+}
