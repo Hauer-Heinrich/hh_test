@@ -9,8 +9,11 @@
 
 ---
 
-### Publish a new Release to Github & TYPO3 TER automatically
-1. Copy .github folder to your own repository / project (just once)
+### Publish your TYPO3 Extension to Github+TYPO3 TER (automatically)
+1. Go to your project/git folder and execute the following (if .github/workflows/main.yml does not exist): 
+    ```
+    mkdir -p .github/workflows && curl -Lo .github/workflows/main.yml https://raw.githubusercontent.com/Hauer-Heinrich/hh_test/main/.github/workflows/main.yml
+    ```
 2. Edit composer.json and ext_emconf.php and change the version number
 3. Stage, commit, publish and tag all at once by executing the following (change X.X.X to your version): 
     ```
