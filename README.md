@@ -6,8 +6,6 @@
 3. Then execute (replace the version): `VERSION="X.X.X" && git commit -am "New Version $VERSION" && git tag "$VERSION" && git push && git push --tags`
 4. Check if the Github Action has been successfully executed, go to your Repository and click on the "Actions" Tab (usually something like https://github.com/username/repositoryname/actions)
 
-The next time you want to push a new Release, then use step 3. and 4.
-
 ## Useful resources: 
 See docs for glob pattern: 
 
